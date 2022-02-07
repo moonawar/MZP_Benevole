@@ -51,6 +51,7 @@ public class Tile : MonoBehaviour
             UnselectTile();
         } else {
             isSelected = true;
+            UnselectTile();
             FindAvailableTile();
         }
         
