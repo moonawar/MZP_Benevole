@@ -9,4 +9,5 @@ public class CameraScript : MonoBehaviour
 
         Camera.main.orthographicSize = orthoSize;    
     }
+
 }

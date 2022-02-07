@@ -40,7 +40,7 @@ public class Tile : MonoBehaviour
         GameObject[] tiles = GameObject.FindGameObjectsWithTag("Tile");
         foreach (GameObject t in tiles)
         {
-            t.GetComponent<Tile>().isSelected = false;
+            t.GetComponent<Tile>().isSelected = false;  
         }
     }
 
