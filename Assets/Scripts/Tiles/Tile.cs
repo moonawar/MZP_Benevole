@@ -44,7 +44,7 @@ public class Tile : MonoBehaviour
         }
     }
 
-    private void OnMouseDown() {
+    private void OnMouseUp() {
         if (isSelected)
         {
             isSelected = false;

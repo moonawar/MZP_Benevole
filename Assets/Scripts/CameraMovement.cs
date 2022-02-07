@@ -5,8 +5,10 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     Vector3 touchStart; bool panAllowed = true;
+    float dampEndTime; Vector3 cameraTargetPos, direction; 
     public float zoomMax = 10f;
     public float zoomMin = 3.9f;
+    Vector3 velocity = Vector3.zero;
     private void Start() {
         
     }
@@ -37,9 +39,23 @@ public class CameraMovement : MonoBehaviour
             Zoom(difference*0.001f);
 
         }
-        else if (Input.GetMouseButton(0) && panAllowed){
-            Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Camera.main.transform.position += direction;
+        else if ((Input.GetMouseButton(0) && panAllowed) || (Time.time < dampEndTime && panAllowed)){
+            if (Input.GetMouseButton(0)){
+                direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                cameraTargetPos = Camera.main.transform.position + direction;
+                dampEndTime = Time.time + 1f;
+            }
+          
+            if (!Input.GetMouseButton(0)){
+                Camera.main.transform.position = 
+                    Vector3.SmoothDamp(Camera.main.transform.position, cameraTargetPos+direction, 
+                    ref velocity, 0.25f);
+            } else {
+                Camera.main.transform.position = 
+                    Vector3.SmoothDamp(Camera.main.transform.position, cameraTargetPos, 
+                    ref velocity, 0.25f);
+            }
+            
         }
     }
 }
