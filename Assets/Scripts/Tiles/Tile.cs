@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    public bool isSelected;
+    public bool isSelected;  public bool isPanning;
     public GameObject highlightTile;
     Vector3 currentPos; float tileScale;
     private void Awake() {
@@ -45,13 +45,13 @@ public class Tile : MonoBehaviour
     }
 
     private void OnMouseUp() {
-        if (isSelected)
+        if (isSelected && !isPanning)
         {
             isSelected = false;
             UnselectTile();
-        } else {
-            isSelected = true;
+        } else if (!isPanning){
             UnselectTile();
+            isSelected = true;
             FindAvailableTile();
         }
         

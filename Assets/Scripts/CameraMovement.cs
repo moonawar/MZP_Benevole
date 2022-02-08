@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    Vector3 touchStart; bool panAllowed = true;
+    Vector3 touchStart; bool panAllowed = true; bool isPanning;
     float dampEndTime; Vector3 cameraTargetPos, direction; 
     public float zoomMax = 10f;
     public float zoomMin = 3.9f;
     Vector3 velocity = Vector3.zero;
-    private void Start() {
+    private void Awake() {
         
     }
     
