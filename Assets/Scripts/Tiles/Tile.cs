@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; 
 
 public class Tile : MonoBehaviour
 {
-    public bool isSelected;  public bool isPanning;
+    public bool isSelected; 
     public GameObject highlightTile;
     Vector3 currentPos; float tileScale;
+
+    public GameObject action, buildMode;
     private void Awake() {
         currentPos = transform.position;
         tileScale = transform.localScale.x;
     }
-    void FindAvailableTile(){
+    public void FindAvailableTile(){
+        action.SetActive(false);
+        int ot = 0;
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -20,12 +24,18 @@ public class Tile : MonoBehaviour
                                     (currentPos.y-tileScale) + tileScale*i, 0);
                 if (!isNotAvailable(instancePos)){
                     Instantiate(highlightTile, instancePos, Quaternion.identity);
+                    ot ++;
                 }
             }
         }
+        if (ot != 0){
+            buildMode.SetActive(true);
+        } else {
+            UnselectTile();
+        }
     }
 
-    bool isNotAvailable(Vector3 pos3){
+    public bool isNotAvailable(Vector3 pos3){
         Vector2 pos2 = new Vector2(pos3.x, pos3.y);
         Collider2D coll = Physics2D.OverlapPoint(pos2, LayerMask.GetMask("TileBase"));
         return coll;
@@ -41,19 +51,29 @@ public class Tile : MonoBehaviour
         foreach (GameObject t in tiles)
         {
             t.GetComponent<Tile>().isSelected = false;  
-        }
+            t.GetComponent<Tile>().action.SetActive(false);
+            t.GetComponent<Tile>().buildMode.SetActive(false);
+        } 
     }
 
     private void OnMouseUp() {
-        if (isSelected && !isPanning)
+        if (isSelected)
         {
             isSelected = false;
             UnselectTile();
-        } else if (!isPanning){
+        } else {
             UnselectTile();
+            
             isSelected = true;
-            FindAvailableTile();
-        }
+            action.SetActive(true);
+        }   
+    }
+    public void Demolish(){
+        if (GameObject.FindGameObjectsWithTag("Tile").Length > 1)
+        {
+            Destroy(gameObject);
+        } else return;
         
     }
+    
 }
