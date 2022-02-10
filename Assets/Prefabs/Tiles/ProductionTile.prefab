@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 225, y: 104.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1792, y: 828}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8226060168338510719
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1344080295656951208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6840737686717920751}
+      - m_Target: {fileID: 1820163791662054995}
         m_TargetAssemblyTypeName: Tile, Assembly-CSharp
         m_MethodName: Demolish
         m_Mode: 1
@@ -239,7 +239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -889.10583, y: -408.746}
+  m_AnchoredPosition: {x: -883.1, y: -402.74}
   m_SizeDelta: {x: 0.9241, y: 0.7921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8827928694309626227
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6840737686717920751}
+      - m_Target: {fileID: 1820163791662054995}
         m_TargetAssemblyTypeName: Tile, Assembly-CSharp
         m_MethodName: UnselectTile
         m_Mode: 1
@@ -544,7 +544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -895.94, y: -411.47}
+  m_AnchoredPosition: {x: -890, y: -405.5}
   m_SizeDelta: {x: 5.6205, y: 4.8609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4817049441882687650
@@ -747,7 +747,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6037320183707082042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -898.0033, y: -416.006}
+  m_AnchoredPosition: {x: 8, y: 7.988}
   m_SizeDelta: {x: 4, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2132578886237426299
@@ -886,7 +886,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6840737686717920751}
+      - m_Target: {fileID: 1820163791662054995}
         m_TargetAssemblyTypeName: Tile, Assembly-CSharp
         m_MethodName: Select
         m_Mode: 1
@@ -907,11 +907,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7874448255695869587}
-  - component: {fileID: 6840737686717920751}
+  - component: {fileID: 1820163791662054995}
   - component: {fileID: 8502581879002025794}
-  - component: {fileID: 6986981819712857009}
+  - component: {fileID: 1085137656249640316}
   m_Layer: 3
-  m_Name: Tile
+  m_Name: ProductionTile
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,9 +936,9 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -2, y: -2}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 4, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6840737686717920751
+--- !u!114 &1820163791662054995
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8502581879002025793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b7f2b35b160b104183f73202d026b78, type: 3}
+  m_Script: {fileID: 11500000, guid: a97101ca1c9d58749bc462763e64d99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
@@ -994,18 +994,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b05d575b8ffbe344b0bd493ea8bfd00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e4dbb920a645fc41a4b77e1ea278767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6.4, y: 6.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6986981819712857009
+--- !u!61 &1085137656249640316
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1023,7 +1023,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 6.4, y: 6.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6840737686717920751}
+      - m_Target: {fileID: 1820163791662054995}
         m_TargetAssemblyTypeName: Tile, Assembly-CSharp
         m_MethodName: FindAvailableTile
         m_Mode: 1

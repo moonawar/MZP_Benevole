@@ -69,10 +69,11 @@ public class Tile : MonoBehaviour
         }   
     }
     public void Demolish(){
-        if (GameObject.FindGameObjectsWithTag("Tile").Length > 1)
-        {
-            Destroy(gameObject);
-        } else return;
+        PopUpManager popUp = FindObjectOfType<PopUpManager>(true);
+        popUp.gameObject.SetActive(true);
+        popUp.confirmDemolition.SetActive(true);
+
+        popUp.source = gameObject;
         
     }
     
