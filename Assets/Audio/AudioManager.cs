@@ -1,39 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.Audio;
+using System;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sounds;
-    bool onPlay; float nextSongTime;
-    private void Awake() {
-        foreach (Sound s in sounds)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
+    public BGM[] bgms; float nextSongTime;
 
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.loop;
+    private void Awake() {
+        foreach (BGM b in bgms)
+        {
+            b.source = gameObject.AddComponent<AudioSource>();
+            b.source.clip = b.clip;
+
+            b.source.volume = b.volume;
         }
     }
 
     public void PlaySound(string name){
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
+        BGM b = Array.Find(bgms, bgm => bgm.name == name);
+        if (b == null)
         {
             Debug.LogWarning("Sound " + name + " not found");
             return; 
         }
-        s.source.Play;
+        b.source.Play();
     }
 
-    private void Update() {
-        if (Time.time > nextSongTime + 5)
+       private void Update() {
+        if (Time.time > nextSongTime)
         {
-            int i = Random.Range(0, sounds.Length);
-            PlaySound(sounds[i].name);
+            int i = UnityEngine.Random.Range(0, bgms.Length);
+            FindObjectOfType<AudioManager>().PlaySound(bgms[i].name);
+            nextSongTime = Time.time + bgms[i].clip.length + 5;
             
         }
     }
+    
+
 }

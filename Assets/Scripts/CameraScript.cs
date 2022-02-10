@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class CameraScript : MonoBehaviour
 {
@@ -9,5 +10,7 @@ public class CameraScript : MonoBehaviour
 
         Camera.main.orthographicSize = orthoSize;    
     }
+
+
 
 }

@@ -2,7 +2,7 @@ using UnityEngine.Audio;
 using UnityEngine;
 
 [System.Serializable]
-public class Sound
+public class BGM
 {
     public string name;
     public AudioClip clip;
