@@ -18,6 +18,7 @@ public class TileHighlight : MonoBehaviour
     public void BuildTile(GameObject tile){
         Instantiate(tile, transform.position, Quaternion.identity);
         tile.GetComponent<Tile>().UnselectTile();
+        FindObjectOfType<AudioManager>().PlaySFX("Build");
     }
 
     

@@ -66,6 +66,7 @@ public class Tile : MonoBehaviour
             
             isSelected = true;
             action.SetActive(true);
+            FindObjectOfType<AudioManager>().PlaySFX("Select");
         }   
     }
     public void Demolish(){
