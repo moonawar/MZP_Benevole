@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
         {
             int i = UnityEngine.Random.Range(0, bgms.Length);
             FindObjectOfType<AudioManager>().PlaySound(bgms[i].name);
-            nextSongTime = Time.time + bgms[i].clip.length + 5;
+            nextSongTime = Time.time + bgms[i].clip.length + 2;
         }
     }
     

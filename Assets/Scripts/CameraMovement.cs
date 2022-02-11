@@ -42,13 +42,21 @@ public class CameraMovement : MonoBehaviour
         else if ((Input.GetMouseButton(0) && panAllowed) || (Time.time < dampEndTime && panAllowed)){
             if (Input.GetMouseButton(0)){
                 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                cameraTargetPos = Camera.main.transform.position + direction;
+                cameraTargetPos = new Vector3(
+                    Mathf.Clamp(Camera.main.transform.position.x + direction.x, -28f, 32f),
+                    Mathf.Clamp(Camera.main.transform.position.y + direction.y, -15f, 20f),
+                    Camera.main.transform.position.z
+                );
                 dampEndTime = Time.time + 1f;
             }
           
             if (!Input.GetMouseButton(0)){
                 Camera.main.transform.position = 
-                    Vector3.SmoothDamp(Camera.main.transform.position, cameraTargetPos+direction, 
+                    Vector3.SmoothDamp(Camera.main.transform.position, new Vector3(
+                    Mathf.Clamp(cameraTargetPos.x + direction.x, -14f, 16f),
+                    Mathf.Clamp(cameraTargetPos.y + direction.y, -7.5f, 10f),
+                    cameraTargetPos.z
+                ), 
                     ref velocity, 0.25f);
             } else {
                 Camera.main.transform.position = 

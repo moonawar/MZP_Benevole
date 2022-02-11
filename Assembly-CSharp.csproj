@@ -50,9 +50,11 @@
      <Compile Include="Assets\Scripts\Tiles\ProductionTile.cs" />
      <Compile Include="Assets\Scripts\Resources\Population.cs" />
      <Compile Include="Assets\Scripts\Resources\Material.cs" />
+     <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\Tiles\AgricultureTile.cs" />
      <Compile Include="Assets\Scripts\Resources\Food.cs" />
-     <Compile Include="Assets\Scripts\TimeManager.cs" />
+     <Compile Include="Assets\Scripts\Resources\ResourceManager.cs" />
+     <Compile Include="Assets\Scripts\Tiles\TileConstruction.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

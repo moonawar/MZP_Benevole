@@ -6,7 +6,7 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    int elapsedDay; int elapsedWeek;
+    public int elapsedDay; public int elapsedWeek;
     int elapsedHour; float nextHour;
 
     public Slider timeBar; public TextMeshProUGUI timeText;
