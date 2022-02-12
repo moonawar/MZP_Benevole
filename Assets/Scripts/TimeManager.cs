@@ -56,6 +56,6 @@ public class TimeManager : MonoBehaviour
 
     void UIController(){
         timeBar.value = elapsedHour;
-        timeText.text = elapsedWeek + " Week, " + elapsedDay + " Day";
+        timeText.text = "Week " + elapsedWeek + ", " + "Day " + elapsedDay;
     }
 }
