@@ -126,7 +126,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117403855227139560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 527552126848096318}
@@ -955,9 +955,10 @@ MonoBehaviour:
   action: {fileID: 3645656233114018337}
   buildMode: {fileID: 1174154714703511125}
   buildingCost:
-    population: 2
-    material: 1
+    population: 1
+    material: 50
     buildingTime: 2
+  dailyFoodConsumption: 15
 --- !u!212 &8502581879002025794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1061,7 +1062,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8927655718327338922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 97289755747036816}

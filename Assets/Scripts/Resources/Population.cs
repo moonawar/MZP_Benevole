@@ -5,8 +5,8 @@ using TMPro;
 
 public class Population : MonoBehaviour
 {
-    public int populationCount = 2;
-    public int maxPopulation = 2;
+    public int populationCount = 5;
+    public int maxPopulation = 5;
     public ResidentialTile residentialTile;
     public TextMeshProUGUI countUI;
 

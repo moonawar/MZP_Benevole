@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\Tiles\ResidentialTile.cs" />
      <Compile Include="Assets\Scripts\Tiles\ForestTile.cs" />
      <Compile Include="Assets\PopUpManager.cs" />
+     <Compile Include="Assets\Scripts\Resources\ResourceManager.cs" />
+     <Compile Include="Assets\Scripts\Tiles\TileConstruction.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Resources\Money.cs" />
      <Compile Include="Assets\TileTypes.cs" />
@@ -53,8 +55,7 @@
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\Tiles\AgricultureTile.cs" />
      <Compile Include="Assets\Scripts\Resources\Food.cs" />
-     <Compile Include="Assets\Scripts\Resources\ResourceManager.cs" />
-     <Compile Include="Assets\Scripts\Tiles\TileConstruction.cs" />
+     <Compile Include="Assets\Scripts\Pollution.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

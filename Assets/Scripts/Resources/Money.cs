@@ -11,6 +11,6 @@ public class Money : MonoBehaviour
 
     void Update()
     {
-        countUI.text = moneyCount.ToString();
+        countUI.text = "Unavailable";
     }
 }

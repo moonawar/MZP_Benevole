@@ -955,9 +955,10 @@ MonoBehaviour:
   action: {fileID: 3645656233114018337}
   buildMode: {fileID: 1174154714703511125}
   buildingCost:
-    population: 2
-    material: 2
+    population: 1
+    material: 60
     buildingTime: 3
+  dailyProduction: 30
 --- !u!212 &8502581879002025794
 SpriteRenderer:
   m_ObjectHideFlags: 0

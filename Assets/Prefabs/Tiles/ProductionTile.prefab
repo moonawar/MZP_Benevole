@@ -956,8 +956,10 @@ MonoBehaviour:
   buildMode: {fileID: 1174154714703511125}
   buildingCost:
     population: 2
-    material: 4
+    material: 75
     buildingTime: 4
+  dailyProduction: 50
+  dailyFoodConsumption: 50
 --- !u!212 &8502581879002025794
 SpriteRenderer:
   m_ObjectHideFlags: 0
