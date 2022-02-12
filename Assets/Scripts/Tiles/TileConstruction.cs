@@ -18,6 +18,7 @@ public class TileConstruction : MonoBehaviour
         tile.GetComponent<Tile>().UnselectTile();
         
         ResetPopulation();
+        FindObjectOfType<AudioManager>().PlaySFX("Done");
         Destroy(gameObject);
     }
 

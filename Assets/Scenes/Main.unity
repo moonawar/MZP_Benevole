@@ -2818,7 +2818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -116, y: 764}
+  m_AnchoredPosition: {x: -104.547, y: 959.8519}
   m_SizeDelta: {x: 54.5321, y: 54.5323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566307468
@@ -4541,10 +4541,10 @@ RectTransform:
   m_Father: {fileID: 601612946}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -960, y: -540}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1103964087
 GameObject:
@@ -4729,6 +4729,10 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Select
     clip: {fileID: 8300000, guid: 4f34e3b719998a8459fc5609e1678b07, type: 3}
+    volume: 0.02
+    source: {fileID: 0}
+  - name: Done
+    clip: {fileID: 8300000, guid: cb1a602fe62dbc649b480fb3215f819e, type: 3}
     volume: 0.02
     source: {fileID: 0}
 --- !u!4 &1134297904
@@ -5802,7 +5806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -378.453, y: 766.1481}
+  m_AnchoredPosition: {x: -367, y: 962}
   m_SizeDelta: {x: 394.15576, y: 50.235504}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1580957476
