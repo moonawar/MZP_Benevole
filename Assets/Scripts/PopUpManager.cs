@@ -5,7 +5,7 @@ using UnityEngine;
 public class PopUpManager : MonoBehaviour
 {
     [HideInInspector] public GameObject source;
-    public GameObject confirmBuild, confirmDemolition, cancel;
+    public GameObject confirmBuild, confirmDemolition, cancel, shortage;
     public GameObject tileTypes;
     int material, population; 
 
@@ -36,6 +36,7 @@ public class PopUpManager : MonoBehaviour
         confirmDemolition.SetActive(false);
         tileTypes.SetActive(false);
         cancel.SetActive(false);
+        shortage.SetActive(false);
     }
 
     public void ConfirmDemolition(){
@@ -44,5 +45,10 @@ public class PopUpManager : MonoBehaviour
             Destroy(source);
         }
         ResetPopUp();   
+    }
+
+    public void Shortage(){
+        gameObject.SetActive(true);
+        shortage.SetActive(true);
     }
 }

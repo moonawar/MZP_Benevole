@@ -11,7 +11,7 @@ public class TileConstruction : MonoBehaviour
     [HideInInspector] public int buildTime;
     public TextMeshProUGUI day;
     private void Start() {
-        finishTime = FindObjectOfType<TimeManager>().elapsedDay + buildTime;
+        finishTime = FindObjectOfType<TimeManager>().totalElapsedDay + buildTime;
     }
     void OnConstructionEnd(){
         Instantiate(tile, transform.position, Quaternion.identity);
@@ -28,7 +28,7 @@ public class TileConstruction : MonoBehaviour
     }
 
     private void Update() {
-        currentTime = FindObjectOfType<TimeManager>().elapsedDay;
+        currentTime = FindObjectOfType<TimeManager>().totalElapsedDay;
         if (currentTime >= finishTime && !instatitated){
             instatitated = true;
             OnConstructionEnd();

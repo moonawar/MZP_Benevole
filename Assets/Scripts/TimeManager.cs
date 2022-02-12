@@ -9,6 +9,8 @@ public class TimeManager : MonoBehaviour
     public int elapsedDay; public int elapsedWeek;
     int elapsedHour; float nextHour;
 
+    public int totalElapsedDay;
+
     public Slider timeBar; public TextMeshProUGUI timeText;
     bool timePaused; 
     public Image timeButton; public Sprite[] buttonSprites;
@@ -23,6 +25,7 @@ public class TimeManager : MonoBehaviour
 
             if (elapsedHour == 24){
                 elapsedDay ++;
+                totalElapsedDay ++;
                 elapsedHour = 0;
         }
 
@@ -47,6 +50,7 @@ public class TimeManager : MonoBehaviour
 
     public void SkipTime(){
         elapsedDay ++;
+        totalElapsedDay ++;
         elapsedHour = 0;
     }
 
