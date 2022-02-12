@@ -5165,6 +5165,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7884564853283197547, guid: aea2ecb708c26e544af8b75bc573c013, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7884564853283197547, guid: aea2ecb708c26e544af8b75bc573c013, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bec03b52871c14d3abff4bc764028d87, type: 2}
     - target: {fileID: 7874448255695869587, guid: aea2ecb708c26e544af8b75bc573c013, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5253,6 +5261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResidentialTile
       objectReference: {fileID: 0}
+    - target: {fileID: 8502581879002025794, guid: aea2ecb708c26e544af8b75bc573c013, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd072438d10f54325b7665f48c7849af, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aea2ecb708c26e544af8b75bc573c013, type: 3}
 --- !u!1 &1172058684
