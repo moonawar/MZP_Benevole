@@ -45,6 +45,11 @@ public class TimeManager : MonoBehaviour
         timeButton.sprite = buttonSprites[1];
     }
 
+    public void SkipTime(){
+        elapsedDay ++;
+        elapsedHour = 0;
+    }
+
     public void ClickHandler(){
         if (timePaused){
             StartTime();
