@@ -6,7 +6,7 @@ using TMPro;
 
 public class Food : MonoBehaviour
 {
-    int foodCount;
+    public int foodCount;
     public AgricultureTile agricultureTile;
     public TextMeshProUGUI countUI;
 

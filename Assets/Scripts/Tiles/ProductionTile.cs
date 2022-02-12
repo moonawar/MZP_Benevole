@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ProductionTile : Tile
 {
-    public int buildTime = 5;
+    
 }

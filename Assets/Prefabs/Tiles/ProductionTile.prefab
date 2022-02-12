@@ -954,6 +954,10 @@ MonoBehaviour:
   highlightTile: {fileID: 580597512252184334, guid: 44cc4137570362f4d83cc9d02c6f4a65, type: 3}
   action: {fileID: 3645656233114018337}
   buildMode: {fileID: 1174154714703511125}
+  buildingCost:
+    population: 2
+    material: 4
+    buildingTime: 4
 --- !u!212 &8502581879002025794
 SpriteRenderer:
   m_ObjectHideFlags: 0

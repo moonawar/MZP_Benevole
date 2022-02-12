@@ -12,10 +12,11 @@ public class TileHighlight : MonoBehaviour
         
         popUp.source = gameObject;
     }
-
+    
     public void BuildTile(GameObject tile){
         GameObject newTile = Instantiate(constructionTile, transform.position, Quaternion.identity);
         newTile.GetComponent<TileConstruction>().tile = tile;
+        newTile.GetComponent<TileConstruction>().buildTime = tile.GetComponent<Tile>().buildingCost.buildingTime;
         tile.GetComponent<Tile>().UnselectTile();
         FindObjectOfType<AudioManager>().PlaySFX("Build");
     }

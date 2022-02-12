@@ -5,12 +5,29 @@ using UnityEngine;
 public class PopUpManager : MonoBehaviour
 {
     [HideInInspector] public GameObject source;
-    public GameObject confirmBuild, confirmDemolition;
+    public GameObject confirmBuild, confirmDemolition, cancel;
     public GameObject tileTypes;
+    int material, population; 
+
     public void ConfirmBuild(){
+        material = FindObjectOfType<Material>().materialCount;
+        population = FindObjectOfType<Population>().populationCount;
+
         GameObject instance = tileTypes.GetComponent<TileTypes>().chosenType;
-        source.GetComponent<TileHighlight>().BuildTile(instance);
-        ResetPopUp();
+        int materialCost = instance.GetComponent<Tile>().buildingCost.material;
+        int populationCost = instance.GetComponent<Tile>().buildingCost.population;
+        
+        if (material >= materialCost && population >= populationCost){
+            FindObjectOfType<Material>().materialCount = material - materialCost;
+            FindObjectOfType<Population>().populationCount = population - populationCost;
+
+            source.GetComponent<TileHighlight>().BuildTile(instance);
+            ResetPopUp();
+        } else {
+            cancel.SetActive(true);
+        }
+    
+
     }
 
     public void ResetPopUp(){
@@ -18,6 +35,7 @@ public class PopUpManager : MonoBehaviour
         confirmBuild.SetActive(false);
         confirmDemolition.SetActive(false);
         tileTypes.SetActive(false);
+        cancel.SetActive(false);
     }
 
     public void ConfirmDemolition(){

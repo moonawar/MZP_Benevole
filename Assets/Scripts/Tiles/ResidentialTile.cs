@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ResidentialTile : Tile
 {
-    public int buildTime = 4;
+    
 }

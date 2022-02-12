@@ -6,7 +6,7 @@ using TMPro;
 
 public class Material : MonoBehaviour
 {
-    int materialCount;
+    public int materialCount;
     public ProductionTile productionTile;
     public TextMeshProUGUI countUI;
 

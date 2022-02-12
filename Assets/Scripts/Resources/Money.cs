@@ -6,7 +6,7 @@ using TMPro;
 
 public class Money : MonoBehaviour
 {
-    int moneyCount;
+    public int moneyCount;
     public TextMeshProUGUI countUI;
 
     void Update()

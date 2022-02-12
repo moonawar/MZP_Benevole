@@ -9,6 +9,15 @@ public class Tile : MonoBehaviour
     Vector3 currentPos; float tileScale;
 
     public GameObject action, buildMode;
+    [System.Serializable]
+    public class BuildingCost{
+        public int population;
+        public int material;
+        public int buildingTime;
+    }
+
+    public BuildingCost buildingCost;
+
     private void Awake() {
         currentPos = transform.position;
         tileScale = transform.localScale.x;

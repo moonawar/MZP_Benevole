@@ -5,19 +5,27 @@ using TMPro;
 
 public class TileConstruction : MonoBehaviour
 {
-    int buildTime; int currentTime; int finishTime;
+    int currentTime; int finishTime;
     bool instatitated; 
     [HideInInspector] public GameObject tile; 
+    [HideInInspector] public int buildTime;
     public TextMeshProUGUI day;
-    private void Awake() {
-        finishTime = FindObjectOfType<TimeManager>().elapsedDay + 1;
+    private void Start() {
+        finishTime = FindObjectOfType<TimeManager>().elapsedDay + buildTime;
     }
-
     void OnConstructionEnd(){
         Instantiate(tile, transform.position, Quaternion.identity);
         tile.GetComponent<Tile>().UnselectTile();
+        
+        ResetPopulation();
         Destroy(gameObject);
     }
+
+    void ResetPopulation(){
+        int populationCost = tile.GetComponent<Tile>().buildingCost.population;
+        FindObjectOfType<Population>().populationCount += populationCost;
+    }
+
     private void Update() {
         currentTime = FindObjectOfType<TimeManager>().elapsedDay;
         if (currentTime >= finishTime && !instatitated){
