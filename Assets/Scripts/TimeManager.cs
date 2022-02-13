@@ -20,7 +20,7 @@ public class TimeManager : MonoBehaviour
         if (!timePaused){
             if (Time.time > nextHour){
                 elapsedHour ++;
-                nextHour = Time.time + 1;
+                nextHour = Time.time + 0.2f;
         }
 
             if (elapsedHour == 24){
