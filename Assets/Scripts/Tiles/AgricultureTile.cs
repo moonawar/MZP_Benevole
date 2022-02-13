@@ -6,8 +6,14 @@ public class AgricultureTile : Tile
 {
     public int dailyProduction;
     int currentDay, prevDay; 
+    public GameObject inactive;
     private void Start() {
-        FindObjectOfType<Population>().populationCount -= 2;
+        if (FindObjectOfType<Population>().populationCount - 2 >= 0)
+        {
+            FindObjectOfType<Population>().populationCount -= 2;
+        } else {
+            inactive.SetActive(true);
+        }
     }
 
     void ProduceFood(int value) {
