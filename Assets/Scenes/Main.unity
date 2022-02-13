@@ -5249,36 +5249,36 @@ MonoBehaviour:
   bgms:
   - name: LittlePrincess
     clip: {fileID: 8300000, guid: 6c654025ac681ad46a8b2eb371b0c8d8, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   - name: First Flight
     clip: {fileID: 8300000, guid: a9e59b4399abb2746adeaf4ea4424d3b, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   - name: Sugar Cookie
     clip: {fileID: 8300000, guid: 09e1d506088beb247a975ea6f9893f0e, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   - name: BGM Forest
     clip: {fileID: 8300000, guid: 0938131fb9ce16247b13a54063e2bcad, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   - name: You One Bite, Me One Bite
     clip: {fileID: 8300000, guid: ea6785d1b72beda4988b9faa7ae8eb68, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   sfxs:
   - name: Build
     clip: {fileID: 8300000, guid: 82a83d485d495a741aaab64945da82af, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   - name: Select
     clip: {fileID: 8300000, guid: 4f34e3b719998a8459fc5609e1678b07, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
   - name: Done
     clip: {fileID: 8300000, guid: cb1a602fe62dbc649b480fb3215f819e, type: 3}
-    volume: 0.02
+    volume: 0.33
     source: {fileID: 0}
 --- !u!4 &1134297904
 Transform:

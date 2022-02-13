@@ -44,3 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Hutan
+    uniqueID: 1971571501
+    locked: 0
+  - name: Residensial
+    uniqueID: 3139285001
+    locked: 0
+  - name: Production
+    uniqueID: 832387185
+    locked: 0
+  - name: Agriculture
+    uniqueID: 1311734313
+    locked: 0
