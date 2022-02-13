@@ -191,7 +191,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &3189257865697845956
 MonoBehaviour:
@@ -991,7 +991,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &4881998544280653944
 MonoBehaviour:
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &742524354084057564
 MonoBehaviour:
   m_ObjectHideFlags: 0

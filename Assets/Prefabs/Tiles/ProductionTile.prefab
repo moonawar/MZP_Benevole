@@ -405,12 +405,12 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &3189257865697845956
 MonoBehaviour:
@@ -757,7 +757,7 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
@@ -1490,7 +1490,7 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
@@ -1592,12 +1592,12 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &428253092446243121
 MonoBehaviour:
@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8600156627208695021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60760ec0349cf5f4e8f0855823af56c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas1: {fileID: 0}
+  canvas1: {fileID: 3605303435322150615}
   canvas2: {fileID: 998362690764506492}
   action: {fileID: 523343270036316155}
   tileScript: {fileID: 1820163791662054995}
