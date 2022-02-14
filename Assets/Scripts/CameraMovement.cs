@@ -63,6 +63,8 @@ public class CameraMovement : MonoBehaviour
                     Vector3.SmoothDamp(Camera.main.transform.position, cameraTargetPos, 
                     ref velocity, 0.25f);
             }
+
+            
             
         }
     }
